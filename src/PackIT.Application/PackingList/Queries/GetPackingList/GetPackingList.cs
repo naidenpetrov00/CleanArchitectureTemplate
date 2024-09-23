@@ -22,6 +22,7 @@ public class GetPackingListHandler : IRequestHandler<GetPackingList, PackingList
     public GetPackingListHandler(IApplicationDbContext dbContext, IMapper mapper)
     {
         packingLists = dbContext.PackingLists;
+
         this.mapper = mapper;
     }
 
